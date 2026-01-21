@@ -2,7 +2,7 @@
 
 The "ecg_noise_detection_train" notebook partially replicates the study illustrated in the omonimous paper _“Automatic noise detection for ambulatory electrocardiogram in presence of ventricular arrhythmias through a machine learning approach” (L. Bachi et al., 2024, [DOI](https://doi.org/10.1016/j.compbiomed.2024.109288))_, which originally was conducted in MATLAB. The database is composed of noise indices (also referred to as noise _indexes_), _i.e._ different measures of the amount of noise that is affecting ECG at a given time point. Noise indices were computed on annotated 2-seconds long single-lead ECG windows. Here is an example of normal ECG, ventricular arrhythmia, and noise:
 
-![Normal ECG, ventricular tachycardia, noise side-by-side examples](signal_examples_Github2.png "Title")
+![Normal ECG, ventricular tachycardia, noise side-by-side examples](signal_examples_Github.png "Title")
 
 The goal of the study was to **train an effective noise detection model that does not mistake ventricular arrhythmias as noise**. Ventricular arrhythmias are rare events of critical importance, but could be mistaken as noise by traditional noise detection methods, as their ECG pattern can be substantially different from normal ECG. The other main objective was to determine which noise indexes are most useful for this task.
 
